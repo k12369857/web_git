@@ -3,47 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="/scss/Rester.css">
   <link rel="stylesheet" href="/scss/style.css">
-  <title>Web side demo</title>
-  <div class="Navbar">
-    <!-- 語言切換 Width:20%-->
-    <div class="Language_Bar">
-      <input type="checkbox" id="expand-toggle" />
-      <div class="Language_Bar_Title">
-        <i class="fx bi-globe2"></i>
-        <label for="expand-toggle" id="expand-btn">Language</label>
-        <i class="fm bi-chevron-down"></i>
-      </div>
-      <nav class="Language_Bar_Menu">
-        <ul>
-          <li class="List_item">English</li>
-          <li class="List_item">Chinese</li>
-        </ul>
-      </nav>
-    </div>
-    <!-- Logo Width:60%-->
-    <div class="Logo"><img src="https://placehold.jp/3d4070/ffffff/500x90.png"></div>
-  
-    <!-- Navbar-Menu Width:20%-->
-    <div class="Navbar-SideMenu">
-      <ul>
-        <li class="List_item"><i class="fl bi-chat"></i></li>
-        <li class="List_item">
-          <div class="Navbar-SideMenu-Finditem">
-            <input maxlength="100" placeholder="Search">
-            <i class="fl bi-search"></i>
-          </div>
-        </li>
-        <li class="List_item"><i class="fl bi-person-fill"></i></li>
-        <li class="List_item"><i class="fl bi-bag"></i></li>
-      </ul>
-    </div>
-  
-  </div>
+  <title>Hatter</title>
 </head>
 <body>
+  <div class="container">
+    <div class="head">
+      <aside class="menu_left">
+        <i class='bx bxs-user'> Account</i>
+        <i class='bx bx-star' > favourite</i>
+        <i class='bx bx-notepad'> Historical</i>
+        <i class='bx bx-bell'> notify</i>
+        <i class='bx bx-log-in'> Sign-out</i>
+      </aside>
+    <div class="menu">
+      <button class="menu-btn" id="menu-open"><i class='bx bx-menu' ></i></button>
+    </div>
+    <div class="logo"><a>Hatter</a></div>
+    <div class="search"><button><i class='bx bx-search'></i>
+      </button><input class="searchs" maxlength="100" placeholder="Search"></div>
+     </div>
+      <div class="Food_bar">
+       <div class="Food_title">
+         <lable>Flavored kebabs</lable>
+         <div class="tody_dish"><a>Today's dish</a></div>
+       </div>
+      <div class="food_img"></div>
+        <div class="Text_cent"><span>Lorem ipsum dolor sit amet consectetur. Congue arcu imperdiet leo amet id. Gravida consectetur gravida ut habitant elit at suspendisse lorem.</span></div>
+        <div class="Feeling"><i class='bx bx-message-alt-add'></i>
+          <i class='bx bx-edit' ></i>
+        </div>
+        <div class="line_bar">
+           <div class="divider"></div>
+        </div>
+      </div>
+      <div class="Food_bar">
+       <div class="Food_title">
+         <lable>Delicious steak</lable>
+       </div>
+      <div class="food_img2"></div>
+        <div class="Text_cent"><span>Lorem ipsum dolor sit amet consectetur. Congue arcu imperdiet leo amet id. Gravida consectetur gravida ut habitant elit at suspendisse lorem.</span></div>
+        <div class="Feeling"><i class='bx bx-message-alt-add'></i>
+          <i class='bx bx-edit' ></i>
+        </div>
+        <div class="line_bar">
+           <div class="divider"></div>
+        </div>
+      </div>
+      <div class="Food_bar">
+       <div class="Food_title">
+         <lable>Flavored kebabs</lable>
+       </div>
+      <div class="food_img3"></div>
+        <div class="Text_cent"><span>Lorem ipsum dolor sit amet consectetur. Congue arcu imperdiet leo amet id. Gravida consectetur gravida ut habitant elit at suspendisse lorem.</span></div>
+        <div class="Feeling"><i class='bx bx-message-alt-add'></i>
+          <i class='bx bx-edit' ></i>
+        </div>
+        <div class="line_bar">
+           <div class="divider"></div>
+        </div>
+      </div>
+    </div>
  <script src="index.js"></script>
 </body>
 </html>
