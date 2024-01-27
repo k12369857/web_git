@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+font-family: 'Mulish', sans-serif;
+font-size:14px;
+}
+
+.Navbar{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr ;
+align-items:center;
+flex-wrap:wrap;
+padding:15px 50px;
+
+.Language_Bar{ 
+  
+position:relative;
+display:flex;
+
+
+.Language_Bar_Title{
+  font-weight:900;
+}
+#expand-toggle{
+  display: none;
+}
+#expand-toggle:checked ~ .Language_Bar_Menu {
+  visibility: visible;
+}
+
+.Language_Bar_Menu{
+  visibility:hidden;
+  position:absolute;
+  width:90px;
+  top:25px;
+  left:18px;
+  padding:5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color:fff;
+  ul li{
+    font-size:13px;
+    font-weight:500;
+    color:#4F4F4F;
+    text-align:center;
+    padding:10px;
+    cursor:pointer;
+    &:hover{
+      opacity: 0.6;
+      color:#000;
+    }
+  }
+
+}
+}
+
+}
+.Logo{
+  display: flex;
+  justify-content: center;
+  
+img{
+
+border-radius:10px;
+}
+}
+.Navbar-SideMenu{
+
+display:flex;
+justify-content:flex-end;
+ul{
+display: flex;
+justify-content:center;
+
+gap:10px;
+li{
+  font-size: 20px;
+    .Navbar-SideMenu-Finditem{
+      input{
+        
+    line-height: 1.5;
+    background: none;
+    border:none;
+    outline: none;
+    transition: 0.5s;
+    width:0px;
+    &:focus{
+      width: 100px;
+        border-bottom: 1px solid black;
+    }
+      
+      }
+      &:hover input{
+        width: 100px;
+        border-bottom: 1px solid black;
+       }
+    }
+}
+}
+
+
+}
