@@ -30,25 +30,13 @@ body {
 }
 
 .container {
+  position: relative;
   width: 414px;
   height: 90vh;
   padding: 0px 0px;
   border-radius: 8px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   overflow: auto;
-}
-.container .menu_left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 10px 20px;
-  height: 90vh;
-  position: absolute;
-  top: 69px;
-  left: 0px;
-  background-color: #19BDE1;
-  transition: all 0.3s ease;
-  z-index: 900;
 }
 .container .head {
   display: grid;
@@ -58,7 +46,43 @@ body {
   height: 69px;
   padding: 25px 20px;
   background: #19BDE1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 1000;
+}
+.container .head .menu_left {
+  display: none;
+  position: absolute;
+  padding: 10px 20px;
+  top: 69px;
+  height: 90vh;
+  background-color: rgba(25, 189, 225, 0.97);
+  transition: all 0.3s ease;
+}
+.container .head .menu_left .items {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  color: #B3E0E4;
+}
+.container .head .menu_left .items .item {
+  display: flex;
+  margin-top: 20px;
+  gap: 5px;
+  color: #B3E0E4;
+  translate: all 0.3s ease-in;
+}
+.container .head .menu_left .items .item a {
+  color: #B3E0E4;
+  text-decoration: none;
+}
+.container .head .menu_left .items .item:hover {
+  color: #E0E4B3;
+}
+.container .head .menu_left .items .item:hover a {
+  color: #E0E4B3;
+}
+.container .head .menu_left .items .item:last-child {
+  margin-top: 90px;
 }
 .container .head .menu .menu-btn {
   cursor: pointer;
