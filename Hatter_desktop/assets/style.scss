@@ -1,65 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,300;10..100,400&family=Ingrid+Darling&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
 }
-body{
-height: 100vh;
-
+body {
+  height: 100vh;
 }
 
-.header{
-display:flex ;
-justify-content:space-between;
-align-items: center;
-padding:20px 40px;
-background-color: #19BDE1;
-.Logo{
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #19bde1;
+  position: sticky;
+  top:0;
+    z-index: 999;
+  .Logo {
     display: flex;
-    a{
-    font-size: 40px;
-    font-weight: 900;
-    font-style:italic;
-    color: #fff;
+    a {
+      font-size: 50px;
+      font-weight: 900;
+      font-style: italic;
+      color: #fff;
     }
-}
-.Menu{
+  }
+  .Menu {
     display: flex;
     gap: 15px;
     font-size: 17px;
-    font-weight: 600;
-    a{
-        display: flex;
-        flex-direction: column;
-        color: #b3e0e4;
-        gap: 3px;
-        i{
-            text-align: center;
-        }
-        input{
-            color: #1d1d1d;
-            text-indent:6px;
-            outline: none;
-            width: 120px;
-            border-radius: 5px;
-            border: none;
-            line-height: 20px;
-            
-        }
+    font-weight: 500;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #b3e0e4;
+      gap: 3px;
+      i {
+        text-align: center;
+      }
+      input {
+        color: #1d1d1d;
+        text-indent: 6px;
+        outline: none;
+        width: 120px;
+        border-radius: 5px;
+        border: none;
+        line-height: 20px;
+      }
     }
+  }
 }
-
-}
-.Screen{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-   .top_img{
+.Screen {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  .top_img {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,32 +67,156 @@ background-color: #19BDE1;
     height: 369px;
     background: url(https://images.unsplash.com/photo-1610364274504-7c79ce864793?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-        .right_b{
-            opacity: 0.5;
-            width: 50px;
-            height: 50px;
-        
-        }
-        .left_b{
-            opacity: 0.5;
-            width: 50px;
-            height: 50px;
-         
-        }
-    
-   }
+    background-repeat: no-repeat;
+    background-position: center;
+    button {
+      opacity: 0.5;
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
-.them_bar{
-    display: flex;
-    justify-content: center;
-    gap: 3px;
-    margin-top: 15px;
-    div{
-        background-color: #19BDE1;
-        width: 353px;
-        height: 150px;
+.theme_bar {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 15px;
+  font-family: "Ingrid Darling", cursive;
+  font-size: 45px;
+
+  div {
+    width: 355px;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    a {
+      color: #1d1d1d;
+    }
+  }
+  div:first-child {
+    background-color: #ede3e3;
+  }
+  div:nth-child(2) {
+    background-color: #edd5d5;
+  }
+  div:last-child {
+    background-color: #f7caca;
+  }
+}
+.Dishess {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 45px;
+  color: #9c6868;
+  font-family: "Imbue", serif;
+  font-weight: 400;
+}
+.food_bar {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+
+  .foods_bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.2fr 1.2fr 1fr 0.4fr;
+    column-gap: 8px;
+
+    .food_bolk {
+      width: 259px;
+      .food_img {
+        position: relative;
+        height: 158px;
+        background-image: url(https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+        i {
+          position: absolute;
+          top: 135px;
+          left: 229px;
+          color: red;
+        }
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      p {
+        padding: 0px 20px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.footer{
+    background-color: #19bde1;
+    text-align: center;
+    color: #f5f5f5;
+    height: 90px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 90px;
+}
+@media screen and (max-width:1100px) {
+    .Screen{
+        .top_img{
+        width: 900px;
+        }
+    }
+    .theme_bar{
+        div{
+            width: 298px;
+        }
+    }
+    .food_bar{
+       .foods_bar{
+        grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.2fr 1.2fr 1.2fr 1fr 0.4fr;
+        .food_bolk{
+            width: 292px;
+            .food_img{
+                i{
+                left: 262px;
+                }
+            }
+        }
+       }
     }
 }
-
+@media screen and (max-width:900px) {
+    .header{
+        
+    }
+    .Screen{
+        .top_img{
+        width: 768px;
+        }
+    }
+    .theme_bar{
+        div{
+            width: 254px;
+        }
+    }
+    .food_bar{
+        .foods_bar{
+         grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 1.2fr 1.2fr 1.2fr 1fr 0.4fr;
+         .food_bolk{
+             width: 248px;
+             .food_img{
+                 i{
+                 left: 218px;
+                 }
+             }
+         }
+        }
+     }
+}
+@media screen and (max-width:768px) {
+    
+    
+}
