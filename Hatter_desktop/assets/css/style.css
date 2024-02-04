@@ -165,25 +165,8 @@ body {
   line-height: 90px;
 }
 
-@media screen and (max-width: 1100px) {
-  .Screen .top_img {
-    width: 900px;
-  }
-  .theme_bar div {
-    width: 298px;
-  }
-  .food_bar .foods_bar {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1.2fr 1.2fr 1.2fr 1fr 0.4fr;
-  }
-  .food_bar .foods_bar .food_bolk {
-    width: 292px;
-  }
-  .food_bar .foods_bar .food_bolk .food_img i {
-    left: 262px;
-  }
-}
-@media screen and (max-width: 900px) {
+/*~RWD~*/
+@media screen and (max-width: 1024px) {
   .Screen .top_img {
     width: 768px;
   }
@@ -199,5 +182,85 @@ body {
   }
   .food_bar .foods_bar .food_bolk .food_img i {
     left: 218px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .Menu {
+    display: none;
+  }
+  .header .Logo a {
+    font-size: 30px;
+  }
+  .Screen .top_img {
+    width: 567px;
+    height: 150px;
+  }
+  .Screen .top_img button {
+    width: 25px;
+    height: 25px;
+  }
+  .theme_bar {
+    font-size: 35px;
+  }
+  .theme_bar div {
+    width: 187px;
+    height: 100px;
+    line-height: 100px;
+  }
+  .food_bar .foods_bar .food_bolk {
+    width: 181px;
+  }
+  .food_bar .foods_bar .food_bolk .food_img i {
+    left: 151px;
+  }
+  .footer {
+    height: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 70px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .header .Menu {
+    display: none;
+  }
+  .header .Logo a {
+    font-size: 30px;
+  }
+  .Screen .top_img {
+    width: 375px;
+    height: 150px;
+  }
+  .Screen .top_img button {
+    width: 25px;
+    height: 25px;
+  }
+  .theme_bar {
+    font-size: 35px;
+  }
+  .theme_bar div {
+    width: 123px;
+    height: 100px;
+    line-height: 100px;
+  }
+  .Dishess {
+    font-size: 35px;
+  }
+  .food_bar .foods_bar {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 0.4fr;
+    column-gap: 4px;
+  }
+  .food_bar .foods_bar .food_bolk {
+    width: 183px;
+  }
+  .food_bar .foods_bar .food_bolk .food_img i {
+    left: 153px;
+  }
+  .footer {
+    height: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 70px;
   }
 }/*# sourceMappingURL=style.css.map */
