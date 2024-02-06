@@ -7,9 +7,6 @@
   font-size: 14px;
   text-decoration: none;
 }
-body {
-  height: 100vh;
-}
 
 .header {
   display: flex;
@@ -18,8 +15,18 @@ body {
   padding: 20px 40px;
   background-color: #19bde1;
   position: sticky;
-  top:0;
-    z-index: 999;
+  top: 0;
+  z-index: 999;
+  .Menu_button {
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    i {
+      font-size: 30px;
+      color: #fff;
+    }
+  }
   .Logo {
     display: flex;
     a {
@@ -40,6 +47,9 @@ body {
       justify-content: center;
       color: #b3e0e4;
       gap: 3px;
+      &:hover {
+        color: #e0e4b3;
+      }
       i {
         text-align: center;
       }
@@ -152,145 +162,150 @@ body {
     }
   }
 }
-.footer{
-    background-color: #19bde1;
-    text-align: center;
-    color: #f5f5f5;
-    height: 90px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 90px;
+.footer {
+  background-color: #19bde1;
+  text-align: center;
+  color: #f5f5f5;
+  height: 90px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 90px;
 }
 
 /*~RWD~*/
-@media screen and (max-width:1024px) /*desktop*/{
-    .Screen{
-        .top_img{
-        width: 768px;
-        }
+@media screen and (max-width: 1024px) /*desktop*/ {
+  .Screen {
+    .top_img {
+      width: 768px;
     }
-    .theme_bar{
-        div{
-            width: 254px;
-        }
+  }
+  .theme_bar {
+    div {
+      width: 254px;
     }
-    .food_bar{
-       .foods_bar{
-        grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1.2fr 1.2fr 1.2fr 1fr 0.4fr;
-        .food_bolk{
-            width: 248px;
-            .food_img{
-                i{
-                left: 218px;
-                }
-            }
-        }
-       }
-    }
-}
-@media screen and (max-width:768px) /*pad*/ {
-    .header{
-       .Menu{
-        display: none;
-       }
-       .Logo{
-        a{font-size: 30px;}
-       }
-    }
-    .Screen{
-        .top_img{
-        width: 567px;
-        height: 150px;
-        button {
-            
-            width: 25px;
-            height: 25px;
+  }
+  .food_bar {
+    .foods_bar {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1.2fr 1.2fr 1.2fr 1fr 0.4fr;
+      .food_bolk {
+        width: 248px;
+        .food_img {
+          i {
+            left: 218px;
           }
         }
-        
+      }
     }
-    .theme_bar{
-        font-size: 35px;
-        div{
-            width: 187px;
-            height: 100px;
-            line-height: 100px;
+  }
+}
+@media screen and (max-width: 768px) /*pad*/ {
+  .header {
+    .Menu_button {
+      display: block;
+    }
+    .Menu {
+      background-color: #19bde1;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 15px;
+      top: 80px;
+      left: -50%;
+      transition: all 0.6s ease;
+    }
+    .Logo {
+      a {
+        font-size: 30px;
+      }
+    }
+  }
+  .Screen {
+    .top_img {
+      width: 567px;
+      height: 150px;
+      button {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .theme_bar {
+    font-size: 35px;
+    div {
+      width: 187px;
+      height: 100px;
+      line-height: 100px;
+    }
+  }
+  .food_bar {
+    .foods_bar {
+      .food_bolk {
+        width: 181px;
+        .food_img {
+          i {
+            left: 151px;
+          }
         }
+      }
     }
-    .food_bar{
-        .foods_bar{
-         .food_bolk{
-             width: 181px;
-             .food_img{
-                 i{
-                 left: 151px;
-                 }
-             }
-         }
-        }
-     }
-     .footer{
-        height: 70px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 70px;
-    }
+  }
+  .footer {
+    height: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 70px;
+  }
 }
 
-@media screen and (max-width:430px)/*phone*/ {
-    .header{
-       .Menu{
-        display: none;
-       }
-       .Logo{
-        a{font-size: 30px;}
-       }
+@media screen and (max-width: 430px) /*phone*/ {
+  .header {
+    .Logo {
+      a {
+        font-size: 30px;
+      }
     }
-    .Screen{
-        .top_img{
-        width: 375px;
-        height: 150px;
-        button {
-            
-            width: 25px;
-            height: 25px;
+  }
+  .Screen {
+    .top_img {
+      width: 375px;
+      height: 150px;
+      button {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .theme_bar {
+    font-size: 35px;
+    div {
+      width: 123px;
+      height: 100px;
+      line-height: 100px;
+    }
+  }
+  .Dishess {
+    font-size: 35px;
+  }
+  .food_bar {
+    .foods_bar {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 0.4fr;
+      column-gap: 4px;
+      .food_bolk {
+        width: 183px;
+        .food_img {
+          i {
+            left: 153px;
           }
         }
-        
-    }
-    .theme_bar{
-        font-size: 35px;
-        div{
-            width: 123px;
-            height: 100px;
-            line-height: 100px;
-        }
-    }
-    .Dishess {
-        
-        font-size: 35px;
-        
       }
-    .food_bar{
-        .foods_bar{
-         grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 0.4fr;
-     column-gap: 4px;
-         .food_bolk{
-             width: 183px;
-             .food_img{
-                 i{
-                 left: 153px;
-                 }
-             }
-         }
-        }
-     }
-     .footer{
-        height: 70px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 70px;
     }
+  }
+  .footer {
+    height: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 70px;
+  }
 }

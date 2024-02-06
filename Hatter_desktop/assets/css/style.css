@@ -8,10 +8,6 @@
   text-decoration: none;
 }
 
-body {
-  height: 100vh;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,6 +17,16 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+}
+.header .Menu_button {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.header .Menu_button i {
+  font-size: 30px;
+  color: #fff;
 }
 .header .Logo {
   display: flex;
@@ -43,6 +49,9 @@ body {
   justify-content: center;
   color: #b3e0e4;
   gap: 3px;
+}
+.header .Menu a:hover {
+  color: #e0e4b3;
 }
 .header .Menu a i {
   text-align: center;
@@ -185,8 +194,18 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .header .Menu_button {
+    display: block;
+  }
   .header .Menu {
-    display: none;
+    background-color: #19bde1;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 15px;
+    top: 80px;
+    left: -50%;
+    transition: all 0.6s ease;
   }
   .header .Logo a {
     font-size: 30px;
@@ -221,9 +240,6 @@ body {
   }
 }
 @media screen and (max-width: 430px) {
-  .header .Menu {
-    display: none;
-  }
   .header .Logo a {
     font-size: 30px;
   }
