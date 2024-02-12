@@ -67,25 +67,70 @@
 }
 
 .Screen {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
-  margin-top: 15px;
 }
-.Screen .top_img {
+.Screen .Carousel {
+  position: relative;
+  width: 1069px;
+  height: 369px;
+  overflow: hidden;
+}
+.Screen .Carousel:hover .shift button {
+  opacity: 0.8;
+}
+.Screen .Carousel .shift {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 15px;
+}
+.Screen .Carousel .shift button {
+  width: 35px;
+  height: 35px;
+  opacity: 0.3;
+  border: none;
+  z-index: 2;
+}
+.Screen .Carousel .shift button:hover {
+  opacity: 1;
+}
+.Screen .Carousel .setindexs {
+  position: absolute;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+}
+.Screen .Carousel .setindexs button {
+  width: 50px;
+  height: 5px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.5;
+  z-index: 2;
+}
+.Screen .Carousel .item_imgs {
+  position: relative;
+  display: flex;
   width: 1069px;
   height: 369px;
-  background: url(https://images.unsplash.com/photo-1610364274504-7c79ce864793?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  left: -100;
+  transform: translatex(0%);
+  transition: 0.5s ease;
 }
-.Screen .top_img button {
-  opacity: 0.5;
-  width: 50px;
-  height: 50px;
+.Screen .Carousel .item_imgs img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
 }
 
 .theme_bar {
@@ -176,8 +221,8 @@
 
 /*~RWD~*/
 @media screen and (max-width: 1024px) {
-  .Screen .top_img {
-    width: 768px;
+  .Screen .Carousel {
+    width: 766px;
   }
   .theme_bar div {
     width: 254px;
@@ -210,13 +255,9 @@
   .header .Logo a {
     font-size: 30px;
   }
-  .Screen .top_img {
+  .Screen .Carousel {
     width: 567px;
-    height: 150px;
-  }
-  .Screen .top_img button {
-    width: 25px;
-    height: 25px;
+    height: 269px;
   }
   .theme_bar {
     font-size: 35px;
@@ -243,13 +284,9 @@
   .header .Logo a {
     font-size: 30px;
   }
-  .Screen .top_img {
+  .Screen .Carousel {
     width: 375px;
-    height: 150px;
-  }
-  .Screen .top_img button {
-    width: 25px;
-    height: 25px;
+    height: 169px;
   }
   .theme_bar {
     font-size: 35px;
